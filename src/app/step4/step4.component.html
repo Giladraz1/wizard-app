@@ -1,0 +1,14 @@
+<h2>Step 4: Review Data</h2>
+
+<div>
+  <p><strong>First Name:</strong> {{ getFormDataValue('firstName') }}</p>
+  <p><strong>Last Name:</strong> {{ getFormDataValue('lastName') }}</p>
+  <p><strong>ID Number:</strong> {{ getFormDataValue('idNumber') }}</p>
+  <p><strong>Birthday:</strong> {{ getFormDataValue('birthday') | date }}</p>
+  <p><strong>Hair Color:</strong> {{ getFormDataValue('hairColor') }}</p>
+</div>
+
+<div class="button-container">
+  <button type="button" class="btn btn-primary" (click)="onNext()">OK</button>
+  <button type="button" class="btn btn-secondary">Cancel</button>
+</div>

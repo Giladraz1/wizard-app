@@ -1,0 +1,19 @@
+<h2>Step 3: Choose Hair Color</h2>
+
+<form [formGroup]="form">
+  <div class="form-group">
+    <label for="hairColor">Hair Color:</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="blonde" value="blonde" formControlName="hairColor">
+      <label class="form-check-label" for="blonde">Blonde</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="redhead" value="redhead" formControlName="hairColor">
+      <label class="form-check-label" for="redhead">Redhead</label>
+    </div>
+  </div>
+</form>
+
+<div class="button-container">
+  <button type="button" class="btn btn-primary" (click)="onNext()">Next</button>
+</div>
