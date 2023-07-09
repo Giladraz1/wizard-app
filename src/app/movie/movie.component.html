@@ -1,0 +1,6 @@
+<h1>MOVIE OF THE DAY</h1>
+<div *ngIf="randomMovie">
+  <h2>{{ randomMovie.Title }}</h2>
+  <p>{{ randomMovie.Plot }}</p>
+  <img [src]="randomMovie.Poster" alt="Movie Poster">
+</div>

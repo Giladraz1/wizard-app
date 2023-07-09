@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 import { DataService } from '../data.service';
 
@@ -57,8 +58,7 @@ export class Step4Component {
   }
 
   saveDataAsJson(data: any) {
-    const json = JSON.stringify(data);
-    this.http.post('/assets/data.json', json)
+    this.http.post(`${environment.apiBaseUrl}/senddata`, data)
       .subscribe(
         () => {
           console.log('Data saved successfully.');

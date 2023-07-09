@@ -1,0 +1,9 @@
+<h2>Users</h2>
+<ul>
+  <li *ngFor="let user of users">
+    <input type="checkbox" [(ngModel)]="user.selected">
+    {{ user.firstName }} {{ user.lastName }}
+  </li>
+</ul>
+
+<button (click)="deleteCheckedUsers()" [disabled]="!hasSelectedUsers()">Delete All Checked Users</button>

@@ -9,7 +9,10 @@ import { Step1Component } from './step1/step1.component';
 import { Step2Component } from './step2/step2.component';
 import { Step3Component } from './step3/step3.component';
 import { Step4Component } from './step4/step4.component';
-import { DataService } from './data.service'; // Import the DataService
+import { DataService } from './data.service';
+import { UsersComponent } from './users/users.component';
+import { MovieComponent } from './movie/movie.component'; // Import the DataService
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { DataService } from './data.service'; // Import the DataService
     Step1Component,
     Step2Component,
     Step3Component,
-    Step4Component
+    Step4Component,
+    UsersComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
